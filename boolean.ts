@@ -4,6 +4,6 @@ isBoolean = true;
 
 console.log(typeof isBoolean);
 
-let isBoolean2: boolean = new Boolean(false);
+//let isBoolean2: boolean = new Boolean(false);
 
-console.log(typeof isBoolean2);
+//console.log(typeof isBoolean2);

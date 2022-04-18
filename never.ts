@@ -1,7 +1,5 @@
-declare const a: string | number;
-
 function error(message: string): never {
-  throw new Error();
+  throw new Error(message);
 }
 
 function fail() {
@@ -12,8 +10,10 @@ function infiniteLoop(): never {
   while (true) {}
 }
 
-if (typeof a !== "string") {
-  a;
+declare const b: string | number;
+
+if (typeof b !== "string") {
+  b;
 }
 
 type Indexable<T> = T extends string ? T & { [index: string]: any } : never;
